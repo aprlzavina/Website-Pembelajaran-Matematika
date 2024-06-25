@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Soal - Pembelajaran Statistika</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url(/images/background.png)">
+    <header>
+        <h1 class="animated-title">WEBSITE PEMBELAJARAN <span>STATISTIKA</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="\images\home.png"alt="home"/></a></li>
+                <li><a href="materi.html"><img src="\images\materi.png"alt="materi"/></a></li>
+                <li><a href="contoh-soal.html"><img src="\images\contoh_soal.png"alt="contoh_soal"/></a></li>
+                <li><a href="quiz.html"><img src="\images\quiz.png"alt="quiz"/></a></li>
+                <li><a href="about.html"><img src="\images\about.png"alt="about"/></a></li>
+                <li><a href="login.html" ><img src="\images\login.png"alt="about"/></a></li>
+                <li><a href="#" id="logout-link" style="display: none;">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contoh-soal">
+        <h2>Contoh Soal dan Pembahasan Ukuran Pemusatan Data</h2>
+            <div class="question">
+                <h4>No. 1</h4>
+                <p>Diketahui sekumpulan data nilai ulangan matematika kelas VIII A.</p> 
+                <p>5, 9, 7, 8, 6, 5, 6, 8, 9, 7, 9, 6</p>
+                <p>Berapakah rata-rata dari data tersebut?</p>    
+                <button
+                  type="button"
+                  class="solution-btn"
+                  data-target="solution-q1"
+                >
+                  Penyelesaian
+                </button>
+                <div
+                id="solution-q1"
+                class="solution"
+                style="display: none;"
+                >
+                    <img src="./images/contoh-soal/mean-1.png"/>
+                    <p>Jadi, diperoleh nilai rata-rata dari data tersebut
+                        adalah 14.167
+                    </p>
+                </div>
+            </div>
+            <div class="question">
+                <h4>No. 2</h4>
+                <p>Diketahui data nilai ulangan harian matematika kelas VIII A sebagai berikut. 
+                    Tentukan berapa banyak siswa di kelas itu yang nilainya lebih dari rata-rata?
+                </p> 
+                <img src="./images/contoh-soal/mean-2.png" width="100%" height="100%"/>    
+                <button
+                  type="button"
+                  class="solution-btn"
+                  data-target="solution-q2"
+                >
+                  Penyelesaian
+                </button>
+                <div
+                id="solution-q2"
+                class="solution"
+                style="display: none;"
+                >
+                    <img src="./images/contoh-soal/mean-3.png"/>
+                    <p>Diperoleh nilai rata-ratanya adalah 6.625 sehingga siswa yang memiliki 
+                        nilai di atas rata-rata berjumlah 21 siswa.
+                    </p>
+                </div>
+            </div>
+            <div class="question">
+                <h4>No. 3</h4>
+                <p>Median dari data: 7, 8, 8, 9, 4, 3, 7, 9, 5, 7, 6, 5, 6 adalah …</p>     
+                <button
+                  type="button"
+                  class="solution-btn"
+                  data-target="solution-q3"
+                >
+                  Penyelesaian
+                </button>
+                <div
+                id="solution-q3"
+                class="solution"
+                style="display: none;"
+                >
+                    <p>Urutkan datanya dari nilai terkecil:</p>
+                    <p>3, 4, 5, 5, 6, 6, 7, 7, 7, 8, 8, 9, 9</p>
+                    <p>Data tersebut berjumlah 13, karena data tersebut berjumlah ganjil, 
+                        maka dapat digunakan rumus median
+                    </p>
+                    <img src="./images/contoh-soal/median-1.png"/>
+                    <p>Cari data ke-7 yaitu bernilai 7. Jadi, nilai median dari data tersebut adalah 7</p>
+                </div>
+            </div>
+            <div class="question">
+                <h4>No. 4</h4>
+                <p>Diketahui data nilai ulangan harian matematika kelas VIII A sebagai berikut. Tentukan median dari data tersebut!</p>
+                <img src="./images/contoh-soal/median-2.png" width="100%" height="100%"/>     
+                <button
+                  type="button"
+                  class="solution-btn"
+                  data-target="solution-q4"
+                >
+                  Penyelesaian
+                </button>
+                <div
+                id="solution-q4"
+                class="solution"
+                style="display: none;"
+                >
+                    <p>Terlebih dahulu hitung banyaknya data, yaitu berjumlah 40 data. Karena datanya berjumlah
+                        genap, maka dapat menggunakan rumus median untuk data genap, yaitu:
+                    </p>
+                    <img src="./images/contoh-soal/median-4.png"/>
+                    <p>Perhatikan gambar berikut untuk memahami cara mencari data dalam tabel frekuensi.</p>
+                    <img src="./images/contoh-soal/median-3.png"/>
+                    <p>Jadi, diperoleh mediannya, yaitu 7.</p>
+                </div>
+            </div>
+            <div class="question">
+                <h4>No. 5</h4>
+                <p>Diketahui suatu kumpulan data berikut:</p>    
+                <p>102, 108, 106, 107, 108, 105, 107, 105, 108, 106, 106, 106, 107, 102, 105, 105, 102, 106, 
+                    105, 106, 107, 106, 105, 106, 102, 105, 107, 107, 106, 105, 106, 106, 105, 107, 102
+                </p>
+                <p>Berapakah modus dari kumpulan data tersebut?</p>
+                <button
+                  type="button"
+                  class="solution-btn"
+                  data-target="solution-q5"
+                >
+                  Penyelesaian
+                </button>
+                <div
+                id="solution-q5"
+                class="solution"
+                style="display: none;"
+                >
+                    <p>Agar pekerjaan menjadi lebih mudah dapat dibuat tabel seperti berikut:</p>
+                    <img src="./images/contoh-soal/modus-1.png"/>
+                    <p>Jadi, diperoleh modus dari kumpulan data tersebut adalah 11.</p>
+                </div>
+            </div>
+            <div class="question">
+            <h4>No. 6</h4>
+            <p>Diketahui data nilai ulangan harian matematika kelas VIII A sebagai berikut. 
+                Tentukan modus dari data tersebut!</p>
+                <img src="./images/contoh-soal/modus-2.png" width="100%" height="100%"/>
+            <button
+              type="button"
+              class="solution-btn"
+              data-target="solution-q6"
+            >
+              Penyelesaian
+            </button>
+            <div
+            id="solution-q6"
+            class="solution"
+            style="display: none;"
+            >
+                <p>Berdasarkan tabel di atas, diperoleh bahwa nilai yang paling banyak muncul adalah nilai 7 
+                    dengan frekuensi kemunculan sebanyak 12 kali. Jadi, modus dari data tersebut adalah 7.
+                </p>
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Website Pembelajaran Statistika All rights reserved by Apriliza Vina</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

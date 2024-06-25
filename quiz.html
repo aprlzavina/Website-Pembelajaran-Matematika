@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Pembelajaran Statistika</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url(/images/background.png)">
+    <header>
+        <h1 class="animated-title">WEBSITE PEMBELAJARAN <span>STATISTIKA</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="\images\home.png"alt="home"/></a></li>
+                <li><a href="materi.html"><img src="\images\materi.png"alt="materi"/></a></li>
+                <li><a href="contoh-soal.html"><img src="\images\contoh_soal.png"alt="contoh_soal"/></a></li>
+                <li><a href="quiz.html"><img src="\images\quiz.png"alt="quiz"/></a></li>
+                <li><a href="about.html"><img src="\images\about.png"alt="about"/></a></li>
+                <li><a href="login.html" ><img src="\images\login.png"alt="about"/></a></li>
+                <li><a href="#" id="logout-link" style="display: none;">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="quiz">
+            <h2>Quiz Ukuran Pemusatan Data</h2>
+            <p>Di sebuah kelas, diperoleh nilai ujian matematika dari 10 siswa adalah sebagai berikut:</p>
+            <p>78, 85, 90, 88, 75, 85, 80, 90, 85, 92</p>
+            <p>Berdasarkan informasi di atas, carilah ukuran pemusatan pada data tersebut.</p>
+            <form id="quiz-form">
+                <div class="question">
+                    <p><strong>1. Berapakah mean dari data tersebut?</strong></p>
+                    <label><input type="radio" name="q1" value="A. 85"> A. 85</label><br>
+                    <label><input type="radio" name="q1" value="B. 84.8"> B. 84.8</label><br>
+                    <label><input type="radio" name="q1" value="C. 84.6"> C. 84.6</label><br>
+                    <label><input type="radio" name="q1" value="D. 85.2"> D. 85.2</label>
+                </div>
+                <div class="question">
+                    <p><strong>2. Berapakah median dari data tersebut?</strong></p>
+                    <label><input type="radio" name="q2" value="A. 85"> A. 85</label><br>
+                    <label><input type="radio" name="q2" value="B. 84"> B. 84</label><br>
+                    <label><input type="radio" name="q2" value="C. 88"> C. 88</label><br>
+                    <label><input type="radio" name="q2" value="D. 80"> D. 80</label>
+                </div>
+                <div class="question">
+                    <p><strong>3. Berapakah modus dari data tersebut?</strong></p>
+                    <label><input type="radio" name="q3" value="A. 90"> A. 90</label><br>
+                    <label><input type="radio" name="q3" value="B. 75"> B. 75</label><br>
+                    <label><input type="radio" name="q3" value="C. 80"> C. 80</label><br>
+                    <label><input type="radio" name="q3" value="D. 85"> D. 85</label>
+                </div>
+                <div class="question">
+                    <p><strong>4. Berapakah modus dari data tersebut?</strong></p>
+                    <label><input type="radio" name="q4" value="A. 6"> A. 6</label><br>
+                    <label><input type="radio" name="q4" value="B. 7"> B. 7</label><br>
+                    <label><input type="radio" name="q4" value="C. 8"> C. 8</label><br>
+                    <label><input type="radio" name="q4" value="D. 9"> D. 9</label>
+                </div>
+                <div class="question">
+                    <p><strong>5. Berapakah modus dari data tersebut?</strong></p>
+                    <label><input type="radio" name="q5" value="A. 0"> A. 0</label><br>
+                    <label><input type="radio" name="q5" value="B. 1"> B. 1</label><br>
+                    <label><input type="radio" name="q5" value="C. 2"> C. 2</label><br>
+                    <label><input type="radio" name="q5" value="D. 3"> D. 3</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="quiz-result"></div>
+            <div id="quiz-solution" style="display: none;">
+                <h3>Pembahasan Quiz:</h3>
+                <h4>Pembahasan No.1</h4>
+                <button type="button" class="solution-btn" data-target="solution-q1">Pembahasan</button>
+                <div id="solution-q1" class="solution" style="display: none;">
+                    <img src="./images/quiz/mean.png" width="100%" height="100%"/>
+                    <p>Jadi, diperoleh mean atau rata-ratanya adalah 84.8</p>
+                    <p>Jawaban yang benar: B. 84.8</p>
+                </div>
+                <h4>Pembahasan No.2</h4>
+                <button type="button" class="solution-btn" data-target="solution-q2">Pembahasan</button>
+                <div id="solution-q2" class="solution" style="display: none;">
+                    <p>Urutkan data: 75, 78, 80, 85, 85, 85, 88, 90, 90, 92</p>
+                    <p>Karena jumlah data ada 10, maka gunakan rumus median untuk data genap:</p>
+                    <img src="./images/quiz/median.png" width="100%" height="100%"/>
+                    <p>Jadi, diperoleh median data tersebut adalah 85</p>
+                    <p>Jawaban yang benar: A. 85</p>
+                </div>
+                <h4>Pembahasan No.3</h4>
+                <button type="button" class="solution-btn" data-target="solution-q3">Pembahasan</button>
+                <div id="solution-q3" class="solution" style="display: none;">
+                    <p>Urutkan data: 75, 78, 80, 85, 85, 85, 88, 90, 90, 92</p>
+                    <p>Modus adalah nilai yang paling sering muncul. Nilai 85 muncul sebanyak 3 kali, 
+                        sehingga modus dari data tersebut adalah 85.
+                    </p>
+                    <p>Jawaban yang benar: D. 85</p>
+                </div>
+                <h4>Pembahasan No.4</h4>
+                <button type="button" class="solution-btn" data-target="solution-q4">Pembahasan</button>
+                <div id="solution-q4" class="solution" style="display: none;">
+                    <p>Karena nilai rata-rata kelas tersebut adalah 84.8, maka banyaknya siswa yang memperoleh 
+                        nilai lebih dari rata-rata adalah 7 orang.
+                    </p>
+                    <p>Jawaban yang benar: B. 7</p>
+                </div>
+                <h4>Pembahasan No.5</No></h4>
+                <button type="button" class="solution-btn" data-target="solution-q5">Pembahasan</button>
+                <div id="solution-q5" class="solution" style="display: none;">
+                    <p>Karena nilai rata-rata kelas tersebut adalah 84.8 dan KKM kelas tersebut adalah 
+                        nilai rata-ratanya, maka banyaknya siswa yang tida lulus ujian ada 3 orang.
+                    </p>
+                    <p>Jawaban yang benar: D. 3</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Website Pembelajaran Statistika All rights reserved by Apriliza Vina</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
